@@ -122,7 +122,7 @@ sns.boxplot(data=day_df, x='weather', y='count', hue='workingday')
 plt.title('Hubungan Cuaca dengan Persewaan Sepeda di Hari Kerja')
 plt.xlabel('weather')
 plt.ylabel('Total Penyewa Sepeda')
-plt.show()
+st.pyplot(fig1)
 
 """### Pertanyaan 2: Bagaimana perbedaan persewaan sepeda di hari kerja dan hari biasa"""
 
@@ -131,7 +131,7 @@ sns.boxplot(data=day_df, x='workingday', y='count', hue='weekday')
 plt.title('perbedaan Persewaan Sepeda di Hari Kerja dan Hari Biasa')
 plt.xlabel('workingday')
 plt.ylabel('Total Penyewa Sepeda')
-plt.show()
+st.pyplot(fig2)
 
 """## Conclusion
 
