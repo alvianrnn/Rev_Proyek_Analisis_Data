@@ -35,7 +35,7 @@ import seaborn as sns
 hour_df = pd.read_csv("/content/hour.csv")
 hour_df.head()
 
-day_df = pd.read_csv("/content/day.csv")
+day_df = pd.read_csv("https://raw.githubusercontent.com/alvianrnn/Rev_Proyek_Analisis_Data/main/day.csv")
 day_df.head()
 
 """### Assessing Data"""
