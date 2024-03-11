@@ -118,21 +118,21 @@ day_df.groupby(by='weekday').agg({
 ### Pertanyaan 1: Apa hubungan cuaca dengan persewaan sepeda di hari kerja?
 """
 
+st.subheader('Hubungan Cuaca dengan Persewaan Sepeda di Hari Kerja')
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=day_df, x='weather', y='count', hue='workingday')
-plt.title('Hubungan Cuaca dengan Persewaan Sepeda di Hari Kerja')
-plt.xlabel('weather')
+plt.xlabel('Weather')
 plt.ylabel('Total Penyewa Sepeda')
-st.pyplot(fig1)
+st.pyplot()
 
 """### Pertanyaan 2: Bagaimana perbedaan persewaan sepeda di hari kerja dan hari biasa"""
 
+st.subheader('Perbedaan Persewaan Sepeda di Hari Kerja dan Hari Biasa')
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=day_df, x='workingday', y='count', hue='weekday')
-plt.title('perbedaan Persewaan Sepeda di Hari Kerja dan Hari Biasa')
-plt.xlabel('workingday')
+plt.xlabel('Workingday')
 plt.ylabel('Total Penyewa Sepeda')
-st.pyplot(fig2)
+st.pyplot()
 
 """## Conclusion
 
